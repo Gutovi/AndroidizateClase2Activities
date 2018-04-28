@@ -1,97 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".TestActivity">
 
-
-    <ImageButton
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="right"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ImgSalir"
-        android:background=""
-        />
-
-    <ImageView
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-        android:layout_gravity="center"
-        android:src="@drawable/ImgAvatar"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gutovi"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Desarrollador de Apps en Potencia"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_gravity="center"
-        />
-
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="- Conocimiento básico de Android Studio
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:background=""
+            android:scaleType="fitCenter"
+            android:src="@drawable/ImgSalir" />
+
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ImgAvatar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gutovi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Desarrollador de Apps en Potencia"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="- Conocimiento básico de Android Studio
 - Varios anillos, collares y pulseras.
 - Gran barba.
 - Bebedor competitivo de café."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:layout_gravity="center"
-        />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Realizar Encuesta"
-        android:textAllCaps="false"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¡Me cae bien!">
-        </RadioButton>
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Realizar Encuesta"
+            android:textAllCaps="false" />
 
-        <RadioButton
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Es decente.">
-        </RadioButton>
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="¡Es de lo peor!">
-        </RadioButton>
-    </RadioGroup>
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Me cae bien!"></RadioButton>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Es decente."></RadioButton>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Es de lo peor!"></RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:hint="Escribime un mensaje."
-        />
-
-
-
-</LinearLayout>
+        android:hint="Escribime un mensaje." />
+</FrameLayout>
