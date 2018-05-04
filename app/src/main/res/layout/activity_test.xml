@@ -12,19 +12,41 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_gravity="right"
-            android:background=""
-            android:scaleType="fitCenter"
-            android:src="@drawable/ImgSalir" />
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/btn_sendmail"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_email" />
+
+                <ImageButton
+                    android:id="@+id/btn_account"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_default_user" />
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_salir" />
+        </LinearLayout>
 
         <ImageView
             android:layout_width="144dp"
             android:layout_height="144dp"
             android:layout_gravity="center"
-            android:src="@drawable/ImgAvatar" />
+            android:src="@drawable/img_avatar" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,10 +70,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="- Conocimiento básico de Android Studio
-- Varios anillos, collares y pulseras.
-- Gran barba.
-- Bebedor competitivo de café."
+            android:text="- Conocimiento inicial de Android Studio.
+\n- Varios anillos, collares y pulseras.
+\n- Gran barba.
+\n- Bebedor competitivo de café."
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <Button
