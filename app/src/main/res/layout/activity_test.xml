@@ -12,43 +12,58 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-            <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="right">
+            android:gravity="end"
+            android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/btn_sendmail"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_gravity="right"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/img_email" />
+            <ImageButton
+                android:id="@+id/btn_gallery"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:contentDescription="Gallery Button"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_gallery" />
 
-                <ImageButton
-                    android:id="@+id/btn_account"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_gravity="right"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/img_default_user" />
+            <ImageButton
+                android:id="@+id/btn_sendmail"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:contentDescription="E-Mail Button"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_email" />
 
-                <ImageButton
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_gravity="right"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/img_salir" />
+            <ImageButton
+                android:id="@+id/btn_account"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:contentDescription="Log-In Button"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_default_user" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:contentDescription="Exit Button"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_salir" />
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/imgUserID"
             android:layout_width="144dp"
             android:layout_height="144dp"
             android:layout_gravity="center"
+            android:contentDescription="User Icon"
             android:src="@drawable/img_avatar" />
 
         <TextView
+            android:id="@+id/lblUserID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -58,6 +73,7 @@
 
 
         <TextView
+            android:id="@+id/lblUserSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -77,6 +93,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <Button
+            android:id="@+id/btn_survey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -85,8 +102,10 @@
             android:textAllCaps="false" />
 
         <RadioGroup
+            android:id="@+id/rdg_Survey"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -117,5 +136,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:hint="Escribime un mensaje." />
+        android:hint="Escribime un mensaje."
+        android:inputType="text|textMultiLine|textLongMessage" />
 </FrameLayout>
