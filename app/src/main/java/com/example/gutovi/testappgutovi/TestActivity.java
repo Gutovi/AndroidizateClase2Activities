@@ -22,6 +22,13 @@ public class TestActivity extends AppCompatActivity {
                 startActivity ( intent );
             }
         });
+        findViewById(R.id.btn_gallery).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (TestActivity.this, GalleryActivity.class );
+                startActivity ( intent );
+            }
+        });
         findViewById(R.id.btn_sendmail).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
